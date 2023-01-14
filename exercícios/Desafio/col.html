@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>agrupamento de colunas</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 800px;
+            height: 400px;
+
+        }
+        tr, th, td{
+            border: 1px solid black;
+            
+        }
+        .nome{
+            background-color: rgb(255, 0, 0);
+            
+        }
+        .cidade{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="nome">
+            <col class="cidade">
+            <col class="csexo">
+            <col class="cprofissão">
+            
+        </colgroup>
+        <tbody>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">idade</th>
+                <th scope="col">sexo</th>
+                <th scope="col">profissão</th>
+
+            </tr>
+                <td>1</td>
+        
+            <tr>
+                <td>2</td>
+
+            </tr>
+            <tr>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
