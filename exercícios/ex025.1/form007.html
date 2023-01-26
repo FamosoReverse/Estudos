@@ -10,16 +10,45 @@
     <h1>Exemplo</h1>
     <form action="cadastro.php" method="post">
 
-        <label for="iest">Estado</label>
-        <select name="est" id="iest">
-            <option value="MG">Minas Gerais</option>
-            <option value="RJ"></option>
-
-
-            <option value="PE">Pernanbuco</option>
-            <option value=""></option>
+        <p>
+            <label for="iest">Estado</label>
+            <select name="est" id="iest">
+                <option value="" selected>--- escolha ---</option>
+                <optgroup label="Região Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+                <optgroup label="Região Nordeste">
+                    <option value="PE">Pernanbuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="MA">Maranhão</option>
+                </optgroup>
+                <optgroup label="Região Sul">
+                    <option value="RS" >Rio Grande do Sul</option>
+                    <option value="PR">Paraná</option>
+                    <option value="SC">Santa Catarina</option>
+                </optgroup>
+        </p>
 
         </select>
+        <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="adm">Administração</option>
+                <option value="cnt">Contabilista</option>
+                <option value="desd">Desenvolvedor</option>
+                <option value="prof">Professor</option>
+
+            </datalist>
+
+            <p>
+                <label for="imsg">Mensagem</label><br>
+                <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+            </p>
+            
+        </p>
 
 
 
