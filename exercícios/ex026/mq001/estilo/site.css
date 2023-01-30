@@ -1,0 +1,58 @@
+@charset "UTF-8";
+/* css tela */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+
+}
+
+header{
+    background-color: lightgrey;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+}
+header h1 {
+    text-align: center;
+    font-size: 2.5em;
+    padding: 5px;
+
+}
+header ul li{
+    background-color: grey;
+    color: white;
+    list-style-type: none;
+    display: inline;
+    padding: 5px;
+
+
+}
+
+body{
+    background-color: grey;
+}
+
+main{
+    background-color: white;
+    height: 100%;
+    width: 600px;
+    margin: auto;
+    display: block;
+    padding: 10px;
+}
+main > h2{
+    padding: 10px;
+    text-align: center;
+    font-size: 2em;
+    padding: 10px;
+}
+
+main article{
+    
+    font-size: 1.5em;
+    line-height: 1em;
+    display: block;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
