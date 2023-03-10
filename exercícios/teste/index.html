@@ -24,14 +24,23 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        menu{
+            display: inline-block;
+        }
+
         menu > a{
             display: inline-block;
             margin: 15px;
         }
 
-        menu a.js{
+        menu ul.js{
             display: none;
+            list-style-type: none;
 
+        }
+
+        ul.js > li:hover{
+            display: block;
         }
 
     </style>
@@ -42,20 +51,15 @@
     <menu>
         <a href="#">incio</a>
         <div id="ds">
-            <a href="#" onclick="clicar()">jogadores</a>
-            <a href="#" class="js">cs go</a>
-            <a href="#" class="js">valorant</a>
+            <a href="#">jogadores</a>
+            <ul class="js">
+                <li><a href="#" class="js">cs go</a></li>
+                <li><a href="#" class="js">valorant</a></li>
+            </ul>
         </div>
     </menu>
 
-    <script>
-        function clicar(){
-            document.querySelector('div#ds') {
-                div.style.display = "block";
-                                
-            }
-        }
-    </script>
+    
    
     
 </body>
